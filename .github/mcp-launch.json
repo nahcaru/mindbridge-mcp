@@ -1,0 +1,13 @@
+{
+  "setup": [
+    "npm ci --no-audit --no-fund",
+    "npm run build || test -f dist/index.js"
+  ],
+  "command": "node",
+  "args": [
+    "dist/index.js"
+  ],
+  "env": {
+    "OPENAI_API_KEY": "sk-dummy-exp5-tools-list-only"
+  }
+}
